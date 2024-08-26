@@ -63,6 +63,7 @@ namespace MatchGame
             Random random = new Random();
             foreach(TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
+                textBlock.Visibility = Visibility.Visible;
                 if (textBlock.Name != "timeTextBlock")
                 {
                     int index = random.Next(animalEjomi.Count);
